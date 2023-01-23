@@ -4,16 +4,23 @@ padding: 0;
 font-family: 'poppins', sans-serif;
 color: white;
 }
+html{
+    scroll-behavior: smooth;
+}
 ul {
     display: flex;
     justify-content: end;
     background-color: #BE3144;
+    padding-right: 15px;
 }
 li{
-    margin-right: 25px;
     list-style: none;
     padding: 20px 15px;
 
+}
+.navcontainer{
+    position: fixed;
+    width: 100%;
 }
 .navbarA{
     font-weight: 400;
@@ -21,10 +28,13 @@ li{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
+li:hover{
+    background-color: #45567D;
+}
 .hero{
     display: flex;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     flex-direction: column;
     background-color: #2A2C2E;
     align-items: center;
@@ -118,8 +128,46 @@ li{
 }
 .Contact{
     background-color: #303841;
+    padding: 150px;
+}
+.contactName{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    
+}
+.workT{
+    font-size: 3.8rem;
+}
+.coffe{
+    font-weight: 200;
+    font-style: italic;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
 }
 .socialIcon{
-    fill: #ed6866;
-    height: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.socialText{
+    font-style: none;
+    margin-left: 10px;
+}
+#fontAwsome{
+    font-size: 40px;
+}
+footer{
+font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background-color: #303841;
+    border-top: 4px solid #BE3144;
+    font-size: 1.1rem;
 }
